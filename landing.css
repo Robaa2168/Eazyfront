@@ -236,3 +236,11 @@ aside {
   font-style: italic;
   background-color: lightgray;
 }
+#on{
+  color: black;
+  background-color: white;
+}
+#of{
+  color: black;
+  background-color: white;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>safe-journey</title>
+    <link rel="stylesheet" href="landing.css" type="text/css">
+    <link rel="stylesheet" href="landing.css" type="text/css">
+    <link rel="stylesheet" href="fontawesome-css/all.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Font Files -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="landing.css" type="text/css">
+
+
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+      type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="navbar-brand" href="#page-top"><img src="./image/safe.png" width="10%" height="10%"
+        alt="save-travell"></a>
+    <a class="active" href="#home">Home</a>
+    <a href="#sign-up">Sign-up</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#booking">Booking</a>
+  </div>
+
+
+
+
+  <div class="header">
+    <img src="./image/road.jpg" alt="back" width="1200px" height="600px">
+    <div class="centered">
+      <div class="container-fluid home-container">
+        <div class="row search">
+          <div class="search-overlay">
+            <div class="container">
+              <div class="home-search-container">
+                <h1>Get Bus Tickets the Easiest Way</h1>
+                <!-- search form -->
+                <form class="search-form search-form-inline">
+                  <div class="column column-inline large-5">
+                    <div class=" form-group input-search-bar ">
+                      <div class="input-group ">
+                        <input type="text" class="form-input form-control" id="search1" autocorrect="on"
+                          placeholder="From" value="" name="depature-location" required>
+                        <input type="text" class="form-input form-control" id="search2" autocorrect="on"
+                          placeholder="To" name="arrival-location" required>
+                        <input type="date" class="form-input form-control" id="search3" autocorrect="on"
+                          placeholder="mm/dd/yy" value="" name="travel-date" required>
+                        <div class="input-group-btn">
+                          <button class="btn btn-success route-button">Search</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!-- search form end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <aside>
+      <h1>Different between online booking and offline-booking</h1>
+    </aside>
+  </div>
+  <div class="about" id="about"></div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="./image/book.jpg" alt="eve" style="width:500px">
+        <div class="container">
+          <h2 id="on">ONLINE-BOOKING</h2>
+          <p class="title">Hassle-free bus booking from anywhere & anytime
+            Wide choice of bus seats, bus types & operators.
+            Great offers and cashbacks on booking tickets
+            Unique benefit for women seat selection
+            24/7 Friendly Customer Care assistance</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="./image/transport.jpg" alt="eve" style="width:500px">
+        <div class="container">
+          <h2 id="of">OFFLINE-BOOKING</h2>
+          <p class="title">Hassle of reaching bus counter & waiting in long queues
+            Not much choice suiting your preference
+            No discounts
+            No unique benefit for women
+            No Friendly assistance</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="class"></div>
+  <header>
+    <h1><i class="fa fa-cutlery" aria-hidden="true" style="font-family: cursive;"></i> Bus-Booking</h1>
+  </header>
+  <main>
+    <section id="order-list">
+      <h2><u>Tickets</u></h2>
+
+      <!-- Cart -->
+      <nav class="cart">
+        <h3>Ticket Total: <span class="red">0Ksh</span></h3>
+        <ol id="listOfOrders">
+        </ol>
+        <a class="btnStyle btnStyle3 finishOrder">Pay</a>
+      </nav>
+
+    </section>
+    <section id="menu">
+      <h2><u>Modern Bus</u></h2>
+
+      <div class="recipe">
+        <img src="https://i.ytimg.com/vi/xXfbZmcQEDY/maxresdefault.jpg" style="width:400px; height:140px"> <br>
+      </div>
+      <div class="side">
+        <p class="name">This is an online bus ticket/booking system.With this system bus
+          company owners can easily manage the bookings/reservations for seats in their buses.Company owners can manage
+          bus routes,bus availability and list all the buses and seats.With this system customers cannot book for seats
+          that have already been booked.Customers can not also do double reservation for eaxample if a customer has
+          booked seat A10,DATE:today BUS:1 The same customer cannot also go and book SEAT A20:DATE:today BUS:1 same
+          departure time.</p>
+        <a class="btnStyle3 btnStyle addToCart" id="addToCartPizza">Purchase ticket</a>
+      </div>
+      <div id="checkOrderPizza" title="Ticket">
+        <h3 class="listHeading">Level:</h3>
+        <ul class="size" id="recipe1">
+          <p>Click on checkbox to uncheck</p>
+          <li><input type="checkbox" value="1000" checked>VIP</li>
+          <li><input type="checkbox" value="750">Middle</li>
+          <li><input type="checkbox" value="500">Regular</li>
+
+
+          <h3 class="listHeading">Trips:</h3>
+
+          <li><input type="checkbox" value="800">Round</li>
+          <li><input type="checkbox" value="0">single</li>
+
+          <h3 class="listHeading">Other:</h3>
+
+          <li><input type="checkbox" value="250">Food</li>
+          <li><input type="checkbox" value="130" checked>Drinks</li>
+
+
+
+        </ul>
+        <a class="btnStyle3 btnStyle addIngredient">Add</a>
+        <a class="btnStyle listOver">Done</a>
+        <h4 class="totalDialog" id="totalDialog1">Total: <span>750</span>Ksh</h4>
+
+      </div>
+
+      <div id="finishOrderDialog" title="Confirm Order">
+        <div id="finalOrderList">
+          <h3>Your tickets:</h3>
+          <ol></ol>
+        </div>
+        <div id="buyerInfo">
+          <input type="text" id="buyerName" placeholder="Enter Name">
+          <input type="text" id="buyerNumber" placeholder="Enter Phone Number">
+          <input type="text" id="buyerAddress" placeholder="Location">
+
+          <a class="btnStyle order">Purchase!</a>
+        </div>
+      </div>
+
+      <div id="thanksMessage">
+        <h1>Thank you for the purchase</h1>
+        <h3>We will drive you soon to <span id="guests" style="color: green;"></span></h3>
+      </div>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <Footer>
+    <div id="contacts">
+      <h3>Contact us</h3>
+      <ul>
+        <p>Contact us for more information</p><br>
+        @safejourneygmail.com
+      </ul>
+    </div>
+    <p>Alright reserved by @2020 safe-journey</p>
+  </Footer>
+
+</body>
+
+</html>
