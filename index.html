@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dababy-Pizaa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+
+  <header>
+    <h1><i class="fa fa-cutlery" aria-hidden="true" style="font-family: cursive;"></i> Bus-Booking</h1>
+  </header>
+  <main>
+    <section id="order-list">
+      <h2><u>Tickets</u></h2>
+
+      <!-- Cart -->
+      <nav class="cart">
+        <h3>Ticket Total: <span class="red">0Ksh</span></h3>
+        <ol id="listOfOrders">
+        </ol>
+        <a class="btnStyle btnStyle3 finishOrder">Pay</a>
+      </nav>
+
+    </section>
+    <section id="menu">
+      <h2><u>Modern Bus</u></h2>
+
+      <div class="recipe">
+        <img src="https://i.ytimg.com/vi/xXfbZmcQEDY/maxresdefault.jpg" style="width:400px; height:140px"> <br>
+      </div>
+      <div class="side">
+        <p class="name">This is an online bus ticket/booking system.With this system bus
+           company owners can easily manage the bookings/reservations for seats in their buses.Company owners can manage bus routes,bus availability and list all the buses and seats.With this system customers cannot book for seats that have already been booked.Customers can not also do double reservation for eaxample if a customer has booked seat A10,DATE:today BUS:1 The same customer cannot also go and book SEAT A20:DATE:today BUS:1 same departure time.</p>
+        <a class="btnStyle3 btnStyle addToCart" id="addToCartPizza">Purchase ticket</a>
+      </div>
+      <div id="checkOrderPizza" title="Ticket">
+        <h3 class="listHeading">Level:</h3>
+        <ul class="size" id="recipe1">
+          <p>Click on checkbox to uncheck</p>
+          <li><input type="checkbox" value="1000" checked>VIP</li>
+          <li><input type="checkbox" value="750">Middle</li>
+          <li><input type="checkbox" value="500">Regular</li>
+
+
+          <h3 class="listHeading">Trips:</h3>
+
+          <li><input type="checkbox" value="800">Round</li>
+          <li><input type="checkbox" value="0">single</li>
+    
+          <h3 class="listHeading">Other:</h3>
+
+          <li><input type="checkbox" value="250">Food</li>
+          <li><input type="checkbox" value="130" checked>Drinks</li>
+          
+
+
+        </ul>
+        <a class="btnStyle3 btnStyle addIngredient">Add</a>
+        <a class="btnStyle listOver">Done</a>
+        <h4 class="totalDialog" id="totalDialog1">Total: <span>750</span>Ksh</h4>
+
+      </div>
+
+      <div id="finishOrderDialog" title="Confirm Order">
+        <div id="finalOrderList">
+          <h3>Your tickets:</h3>
+          <ol></ol>
+        </div>
+        <div id="buyerInfo">
+          <input type="text" id="buyerName" placeholder="Enter Name">
+          <input type="text" id="buyerNumber" placeholder="Enter Phone Number">
+          <input type="text" id="buyerAddress" placeholder="Location">
+
+          <a class="btnStyle order">Purchase!</a>
+        </div>
+      </div>
+
+      <div id="thanksMessage">
+        <h1>Thank you for the purchase</h1>
+        <h3>We will drive you soon to <span id="guests" style="color: green;"></span></h3>
+      </div>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
