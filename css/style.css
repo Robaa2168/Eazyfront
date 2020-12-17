@@ -1,313 +1,246 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+General Styling
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 0;
 }
 
-*::-webkit-scrollbar {
-  width: 5px;
+html{
+    overflow-x: hidden;
+    max-width: 100%;
+    scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, .1);
+.topnav {
+  background-color: #31081f70;
+  overflow: hidden;
 }
 
-*::-webkit-scrollbar-thumb {
-  background: #bbb;
-  border-radius: 9em;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
-}
-
-body {
-  margin: 0;
-  background: #eee url("https://cdn.wallpapersafari.com/87/83/aINmBZ.jpg") 50% 35%/cover no-repeat padding-box padding-box local;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.red {
-  color: red;
-}
-
-h1 {
-  margin: 0;
-  padding: 21px;
-  background: #eb4d4b;
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 29px;
-  line-height: 33px;
-  text-align: center;
-}
-
-h2 {
-  font-family: dancing;
-  font-size: 37px;
-  line-height: 42px;
-  margin-top: 21px;
-  margin-bottom: 21px;
-  text-align: center;
-}
-
-main {
-  display: flex;
-  margin: 21px auto 0 auto;
-  max-width: 1024px;
-  max-height: calc(100vh - 126px);
-  flex-direction: row;
-}
-
-section {
-  margin: 21px;
-  padding: 0 21px 10px 21px;
-  width: calc(50% - 2px);
-  background: rgba(255, 255, 255, .7);
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow-y: auto;
-}
-
-#order-list {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0;
-}
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-}
-
-.menu-item:last-child {
-  border-bottom: none;
-}
-
-.menu-item h4, .menu-item p {
-  margin: 8px;
-}
-
-.menu-item .price {
-  margin-left: auto;
-}
-
-.qty {
-  margin-right: 8px;
-  padding: 2px 4px;
-  width: 40px;
-}
-
-.add-btn {
-  padding: 6px 10px;
-  background: #6ab04c;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.del-btn {
-  display: block;
-  text-align: center;
-}
-
-.del-btn:hover {
-  opacity: .75
-}
-
-.del-btn .fa {
-  color: #eb4d4b;
-}
-
-#export {
-  margin-top: auto;
-  padding: 3px 5px;
-  background: #eee;
-  border: 1px solid #ddd;
-  align-self: flex-end;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.btnStyle {
-  background-color: #C98474;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff;
-  padding: 7px 10px;
-  letter-spacing: .1em;
-  border-radius: 3px;
-  z-index: 1;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-}
-
-.btnStyle:hover {
-  background-color: #874C62;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
-  transform: scale(1.05, 1.05);
-}
-
-.btnStyle2 {
-  background-color: #874C62;
-}
-
-.btnStyle2:hover {
-  background-color: #C98474;
-}
-
-.btnStyle3 {
-  background-color: #A7D2CB;
-}
-
-.btnStyle3:hover {
-  background-color: #F2D388;
-}
-
-.new {
-  display: inline-block;
-  padding: 3%;
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
-}
-
-.side {
-  margin-top: 10px;
-}
-
-.listOfIngredients {
-  list-style: none;
-  margin-bottom: 15px;
-}
-
-.listOfIngredients input {
-  margin: 0px 5px;
-}
-
-.addIngredientWrap {
-  display: flex;
-  margin: 5px 0;
-}
-
-.addIngredientWrap input {
-  width: 60%;
-}
-
-.addIngredientWrap a {
-  padding: 2px 6px;
-  margin: 0 5px;
-  font-size: 15px;
-}
-
-.cancelInput {
-  background-color: #B33232;
-}
-
-.orderName {
-  padding: 13px 0px 8px 0px;
-}
-
-.orderPrice {
-  float: right;
-}
-
-hr {
-  margin: 25px 0 5px 0;
-}
-
-.delBtn {
-  float: right;
-  color: #F2D388;
-  cursor: pointer;
-}
-
-.totalDialog {
-  display: inline-block;
-  float: right;
-  color: red;
-}
-
-#finishOrderDialog {
-  padding: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#finalOrderList {
-  width: 40%;
-}
-
-#finalOrderList h3 {
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 0px;
 }
 
-#finalOrderList ol {
-  margin: 10px 15px;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-#buyerInfo {
-  width: 60%;
-  margin: 0 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
-#buyerInfo input {
-  margin: 5px 0;
-  padding: 3px;
-  width: 90%;
-}
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin:x; 
+    padding-left:2px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    
+    background-color:white;
+  }
+  
+  .container {
+    padding: 0 5px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color:black;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+ #line{display: inline-block;
 
-#buyerInfo .order {
-  display: block;
-  width: 50%;
-  margin-top: 10px;
+ } 
+
+ .container {
+  position: relative;
   text-align: center;
-}
-
-#buyerInfo input::-webkit-input-placeholder {
-  text-align: center;
-}
-
-#thanksMessage {
-  padding: 20px;
-}
-
-/* Dialog Style */
-.ui-dialog {
-  z-index: 2;
-  box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
-  background-color: #fff;
-  padding: 30px;
-}
-
-.ui-draggable-handle {
+  color: white;
+} 
+.centered {
   position: absolute;
-  background-color: #A7D2CB;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 5px;
-  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ho{
+  margin-top: 3%;
+  margin-bottom: 3;
+
+}
+#who{
+  
+  margin-bottom: 3%;
+  margin-bottom: 3%;
+
+}
+ .social-footer {
   text-align: center;
-  z-index: 999;
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;  
+} 
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0px;
 }
 
-.ui-button {
-  background-color: #874C62;
-  border: none;
-  border-radius: 3px;
-  padding: 3px 5px;
-  float: right;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
 }
 
-.ui-button:hover {
-  background-color: #C98474;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
-  transform: scale(1.05, 1.05);
+.social-footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+
+.search {
+  background-size: cover;
+  background-position-y: 100%;
+  height: 300px;
+  margin-top: 50%;
+}
+.search-overlay {
+  background-color: #31081f70;
+  height: inherit;
+}
+.home-search-container {
+  margin-top: 15%;
+  color: white;
+}
+.home-search-container h1 {
+  margin: 3% 0 3% 0;
+}
+/* end */
+
+ /* featured routes */
+.featured {
+  height: 400px;
+}
+.featured .container {
+  margin-top: 2%;
+}
+.featured h2 {
+  margin-bottom: 2%;
+}
+.featured img {
+  height: 200px;
+}
+.featured h3 {
+  text-align: center;
+}
+
+#search1{
+  width:100%;
+  margin-bottom:15%;
+}
+#search2{
+  width:100%;
+  margin-bottom:15%;
+}
+#search3{
+  width:100%;
+  margin-bottom:15%;
+} */
+
+/* *footer */
+#contacts img{
+  width: 50px;
+  height: 50px;
+  display:flex;
+  text-align: center;
+}
+#contacts ul li{
+  display:inline-block;
+  padding:40px 40px 40px;
+  margin-top:-65px;
+  margin-left: 100px;
+}
+footer{
+  background-color: #31081f70;
+  width: 100%;
+  height:150px;
+}
+#contacts h3{
+  margin-bottom:40px;
+  color: white;
+  text-align: center;
+}
+footer p{
+  text-align: center;
+  font-size: 20px;
+  margin-top: -30px;
+  color:white;
+} 
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  align-items: center;
+  font-style: italic;
+  background-color: lightgray;
+}
+#on{
+  color: black;
+  background-color: white;
+}
+#of{
+  color: black;
+  background-color: white;
 }
