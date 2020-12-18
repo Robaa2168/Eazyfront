@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Online Bus Ticket Bookings</title>
+
+    <meta charset="utf-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../app/themes/bus/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../app/themes/bus/assets/css/animate.min.css">
+    <link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../app/themes/bus/assets/css/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Current Page Styles -->
+    <link rel="stylesheet" type="text/css"
+        href="../app/themes/bus/assets/components/revolution_slider/css/settings.min.html" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../app/themes/bus/assets/components/revolution_slider/css/style.css"
+        media="screen" />
+    <link rel="stylesheet" type="text/css"
+        href="../app/themes/bus/assets/components/jquery.bxslider/jquery.bxslider.css" media="screen" />
+
+    <!-- Main Style -->
+    <link id="main-style" rel="stylesheet" href="../app/themes/bus/assets/css/style.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../app/themes/bus/assets/css/custom.css">
+
+    <!-- Updated Styles -->
+    <link rel="stylesheet" href="../app/themes/bus/assets/css/updates.css">
+
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="../app/themes/bus/assets/css/responsive.min.css">
+
+
+
+    <!-- favicon -->
+    <link rel="icon" href="../app/themes/bus/assets/images/favicon.png" type="image/x-icon">
+
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../app/themes/bus/assets/css/jquery.datetimepicker.min.css" />
+
+
+    </style>
+    <div class="page-title-container">
+        <div class="container">
+            <div class="page-title text-center">
+                <h2 class="entry-title">Travellers details</h2>
+            </div>
+            <ul class="breadcrumbs pull-right">
+                <li><a href="index.php">HOME</a></li>
+                <li class="active">Travellers details</li>
+            </ul>
+        </div>
+    </div>
+    <section id="content" class="gray-area">
+        <div class="container">
+            <div class="row">
+                <div class="sidebar col-sms-3 col-sm-3 col-md-3 ">
+
+                    <div class="booking-details travelo-box  ">
+                        <h4>Booking Details</h4>
+                        <article class="flight-booking-details">
+                            <figure>
+                                <img src="" alt="" style="width:100% !important;height:auto !important;">
+                            </figure>
+                            <div class="details">
+                                <div class="constant-column-3 timing clearfix">
+                                    <div class="check-in">
+                                        <label>Departure</label>
+                                        <span>23/12/2020</span>
+                                    </div>
+                                    <div class="duration text-center">
+                                        <i class="soap-icon-clock"></i>
+                                        <span></span>
+                                    </div>
+                                    <div class="check-out">
+                                        <label><br></label>
+                                        <span>
+                                        </span></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <h4>Other Details</h4>
+                        <dl class="other-details">
+                            <dt class="feature">Operator:</dt>
+                            <dd class="value">easy_coach</dd>
+                            <dt class="feature">Route:</dt>
+                            <dd class="value">Busia to Nairobi</dd>
+                            <dt class="feature">Seats selected :</dt>
+                            <dd class="value">
+                                1A </dd>
+                            <dt class="total-price">Total Price</dt>
+                            <dd class="total-price-value">KSH.
+
+                                1800 </dd>
+
+                        </dl>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div id="main" class="col-sms-6 col-sm-8 col-md-9 " style="margin-top: 0%; padding-top: 0%;">
+                    <div class="booking-section travelo-box">
+
+                        <form class="booking-form" action="" method="POST">
+
+                            <input type="hidden" name="operator" value="">
+
+
+
+                            <input type="hidden" name="passengers[1][seat_no]" value="1A">
+                            <input type="hidden" name="passengers[1][fare]" value="1800.00">
+                            <input type="hidden" name="passengers[1][seat][id]" value="1A">
+                            <input type="hidden" name="passengers[1][seat][title]" value="1A">
+                            <input type="hidden" name="passengers[1][seat][title]" value="1A">
+
+                            <input type="hidden" name="passengers[1][id]" value="21261">
+                            <input type="hidden" name="passengers[1][route][title]" value="Busia Nairobi">
+                            <input type="hidden" name="passengers[1][route][from]" value="Busia">
+                            <input type="hidden" name="passengers[1][route][to]" value="Nairobi">
+                            <input type="hidden" name="passengers[1][operator][id]" value="easy_coach">
+                            <input type="hidden" name="passengers[1][operator][title]" value="EasyCoach">
+                            <input type="hidden" name="passengers[1][departure_time]" value="07:00">
+                            <input type="hidden" name="passengers[1][departure_date]" value="23/12/2020">
+
+
+
+
+                            <div class="person-information">
+                                <h2>Passenger 1 Details</h2>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <label>First Name</label>
+                                        <input type="text" pattern="^[A-Za-z -]+$" minlength="3"
+                                            title="Only alphabetical characters, minimum 3-characters, No spaces allowed."
+                                            required="" name="passengers[1][first_name]" class="input-text full-width"
+                                            value="" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <label>Last Name </label>
+                                        <input type="text" pattern="^[A-Za-z -]+$" minlength="3"
+                                            title="Only alphabetical characters, minimum 3-characters, No spaces allowed."
+                                            required="" name="passengers[1][last_name]" class="input-text full-width"
+                                            value="" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <label>ID/Passport</label>
+                                        <input type="text" required=""
+                                            title="Only alphanumeric characters and no spaces allowed"
+                                            name="passengers[1][id_passport]" class="input-text full-width" max="15"
+                                            value="" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <label>Phone Number </label>
+                                        <input type="text" pattern=".{9,13}[0-9 ]+"
+                                            title="Only numerics of 9 to 13 characters in length" required=""
+                                            name="passengers[1][phone]" class="input-text full-width" value=""
+                                            maxlength="13" minlegth="9" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <label>Residence </label>
+                                        <input type="text" pattern="[a-zA-Z0-9 ]+" minlength="3"
+                                            title="Only alphabetical characters, minimum 3-characters, No spaces allowed."
+                                            required="" name="passengers[1][residence]" class="input-text full-width"
+                                            value="" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <label>Nationality</label>
+                                        <div class="selector">
+                                            <select required="true" name="passengers[1][country]" value=""
+                                                class="full-width">
+                                                <option>Kenya</option>
+                                            </select><span class="custom-select full-width">Kenya</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="card-information">
+                                <h2>Details of person paying.</h2>
+                                <div class="form-group row">
+                                    <div class="col-sm-4 col-md-4">
+                                        <label>Full Name</label>
+                                        <input type="text" pattern="^([a-zA-Z ]+)" minlength="3"
+                                            title="Only alphabetical characters, minimum 3-characters allowed"
+                                            required="" value="" name="payee[full_name]" class="input-text full-width"
+                                            placeholder="">
+                                    </div>
+                                    <div class="col-sm-4 col-md-4">
+                                        <label>Mobile</label>
+                                        <input type="text" maxlength="13" minlength="10"
+                                            title="Only numeric characters allowed, between 9-13 charcters" required=""
+                                            value="" name="payee[phone]" class="input-text full-width" placeholder="">
+                                    </div>
+                                    <div class="col-sm-4 col-md-4">
+                                        <label>Email</label>
+                                        <input type="email" required="" value="" name="payee[email]"
+                                            class="input-text full-width" placeholder="">
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="card-information">
+                                <h2>Make Payment</h2>
+                                <div class="form-group">
+                                    Use our till number to pay
+                                   </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                

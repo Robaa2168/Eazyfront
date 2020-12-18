@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<title> Online Bus Ticket Bookings</title>
+
+<!-- Meta Tags -->
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Theme Styles -->
+<link rel="stylesheet" href="home-run/contact.html">
+<link rel="stylesheet" href="use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="home-run/app/themes/bus/assets/css/animate.min.css">
+<link href="maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="home-run/app/themes/bus/assets/css/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+
+<!-- Current Page Styles -->
+<link rel="stylesheet" type="text/css" href="home-run/app/themes/bus/assets/components/revolution_slider/css/settings.min.html"
+    media="screen" />
+<link rel="stylesheet" type="text/css" href="home-run/app/themes/bus/assets/components/revolution_slider/css/style.css"
+    media="screen" />
+<link rel="stylesheet" type="text/css" href="home-run/app/themes/bus/assets/components/jquery.bxslider/jquery.bxslider.css"
+    media="screen" />
+
+<!-- Main Style -->
+<link id="main-style" rel="stylesheet" href="home-run/app/themes/bus/assets/css/style.min.css">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="home-run/app/themes/bus/assets/css/custom.css">
+
+<!-- Updated Styles -->
+<link rel="stylesheet" href="home-run/app/themes/bus/assets/css/updates.css">
+
+<!-- Responsive Styles -->
+<link rel="stylesheet" href="home-run/app/themes/bus/assets/css/responsive.min.css">
+
+
+<link href="cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="home-run/app/themes/bus/assets/css/jquery.datetimepicker.min.css" />
+
+<style>
+    .home{
+        color: black;
+    }
+</style>
+</head>
+
+<body>
+
+
+    <div class="main-header" style="background-color: #cf3622;">
+
+
+        <div class="container">
+
+            <nav id="main-menu" role="navigation">
+                <ul class="menu glovo">
+                    <li class="menu-item-has-children">
+                        <a href="index.html" style="color: white;">Home</a>
+                    </li>
+
+
+                    <li class="menu-item-has-children">
+                        <a href="Booking/ticket.html">Check Ticket</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Register</a>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <section id="content" style="background-image: url('home-run/app/themes/bus/assets/images/Night-Bus-Shelter-Billboard-Free-Mockup.jpg');">
+        >
+        <div>
+            <div class="" >
+        
+        <div class="container">
+            <div id="main">
+                <h1 class="page-title text-center" style="color:white; font-family: cursive; font-style: bold;">Onlie
+                    Ticketing system!</h1>
+                <h2 class="page-description text-center no-float no-padding" style="color:white;">
+                    The easiest way to book bus tickets in Kenya.<br />
+
+                    <header id="header" class="navbar-static-top style2 searcharea">
+                        <div class="main-header">
+                            <div class="container">
+                                <div class="header-search clearfix searchbus">
+                                    <form action="Booking/search.html" >
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+
+                                                <select required name="from" class="select_data from_cities home">
+                                                    <option style="color: silver !important;" value="">Leaving From
+                                                    </option>
+                                                    <option value="Nairobi">Kapasabet</option>
+                                                    <option value="Kisumu">Kisumu</option>
+                                                    <option value="Kampala">Kampala</option>
+                                                    <option value="Maseno">Maseno</option>
+                                                    <option value="Siaya">Siaya</option>
+                                                    <option value="Mbale(kenya)">Mbale(kenya)</option>
+                                                    <option value="Bondo">Bondo</option>
+                                                    <option value="Usenge">Usenge</option>
+                                                    <option value="Nakuru">Nakuru</option>
+                                                    <option value="Kericho">Kericho</option>
+                                                    <option value="Ugunja">Ugunja</option>
+                                                    <option value="Bumala">Bumala</option>
+                                                    <option value="Busia">Busia</option>
+                                                    <option value="Sirare">Sirare</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 destinations">
+
+                                                <select required name="to" class="destination_cities select_data home">
+                                                    <option value="">Going To</option>
+                                                    <option value="Mbale(kenya)">Mbale(kenya)</option>
+                                                    <option value="Bondo">Bondo</option>
+                                                    <option value="Usenge">Usenge</option>
+                                                    <option value="Nakuru">Nakuru</option>
+                                                    <option value="Kericho">Kericho</option>
+                                                    <option value="Ugunja">Ugunja</option>
+                                                    <option value="Bumala">Bumala</option>
+                                                    <option value="Busia">Busia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="datepicker-wrap transparent">
+                                                    <input type="text" name="departure_date"
+                                                        class="input-text white-bg full-width check-in" required
+                                                        placeholder="Departing on" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <button onclick="window.location.href='Booking/search.html'"
+                                                    type="submit" href class="btn-medium uppercase full-width" style="background-color: #cf3622;">search
+                                                    buses
+
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="text-center" style="margin-top: 10px">Pay Now</div>
+                            </div>
+                        </div>
+                    </header>
+    </section>
+
+    <section id="content" class="pt-10  " style="padding-top:30px;
+    padding-bottom:30px;">
+
+        <div class="section  globalp ">
+            <h1 class="text-center header-mobile" style="text-decoration: underline; font-family: cursive;">TRAVEL
+                CONVINIENTLY</h1>
+
+            <div class="row image-box style4 ">
+                <div class="container">
+                    <!-- <div class="col-xs-6 col-sm-3 col-md-3"> -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 ">
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <article class="box">
+
+                                <div class="details" style="text-align:center;">
+                                    <a title="" href="#" class="hover-effect style2">
+                                        <img width="370" class="operator-partner" height="172" alt=""
+                                            src="data:image/jpeg;base64,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"></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <article class="box">
+
+                                <div class="details">
+                                    <a title="" href="#" class="hover-effect style2 text-center">
+                                        <img width="370" class="operator-partner" height="172" alt=""
+                                            src="https://lh3.googleusercontent.com/proxy/2eP8q-vOzoyx3FrS4snFmmxrLNJPy1xYbiO-xDkcrRUcf7fcftGlLmHeRvqJEDBHRWBbRDblvhr1nW-XNwtlk8KW2QkHrsmouJ8oGq4rVo2vwj-opbHLBZP5aHY"></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <article class="box">
+
+                                <div class="details">
+                                    <a title="" href="#" class="hover-effect style2 text-center">
+                                        <img width="370" class="operator-partner" height="172" alt=""
+                                            src="home-run/app/themes/bus/assets/operators-logo/greenline.png"></a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <article class="box">
+
+                                <div class="details">
+                                    <a title="" href="#" class="hover-effect style2 text-center">
+                                        <img width="370" class="operator-partner" height="172" alt=""
+                                            src="https://lh3.googleusercontent.com/proxy/EaL_VsyxH4y-n1lItEc9ejQg1oCZntZ5-5iwwtU8-3UgvHXP0QlZL7s9iVeTVSz1QV6nqjh3mH2sed2nlIHF6P5kFJAr4BWYUxbR6ZS2Iqg"></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="offers hovercontainer section pt-5 pb-30 hidden-md hidden-sm hidden-xs">
+                        <div class="container">
+
+                            <div class="row image-box style2">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <article class="box">
+                                        <figure class="">
+                                            <a href="#" title=""><img
+                                                    src="https://www.pinclipart.com/picdir/middle/119-1199780_bus-graphic-blue-bus-icon-png-clipart.png"
+                                                    alt="" width="270" height="192" /></a>
+                                        </figure>
+                                        <div class="details">
+                                            <h4>1. THE BEST BUS COMPANIES</h4>
+                                            <p>Book your inter city bus tickets, real time from the best bus companies
+                                                in Kenya.</p>
+                                            <a href="#" title="" class="button">SEE ALL</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <article class="box">
+                                        <figure>
+                                            <a href="#" title=""><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVUXW3io6Lx1sc4W-N3CiFtyjuLIheFgQFA&usqp=CAU"
+                                                    alt="" width="270" height="192" /></a>
+                                        </figure>
+                                        <div class="details">
+                                            <h4>2. ENJOY CONVENIENCE</h4>
+                                            <p>Book anytime from the convenience of your school, office, home or market.
+                                            </p>
+                                            <a href="#" title="" class="button">SEE ALL</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <article class="box">
+                                        <figure>
+                                            <a href="#" title=""><img
+                                                    src="https://i0.wp.com/www.dignited.com/wp-content/uploads/2017/09/m-pesa-logo.jpg?fit=435%2C435&ssl=1"
+                                                    alt="" width="270" height="192" /></a>
+                                        </figure>
+                                        <div class="details">
+                                            <h4>3. FLEXIBLE PAYMENTS</h4>
+                                            <p>Pay with M-pesa, credit cards or bank transfers. We have you fully
+                                                covered.</p>
+                                            <a href="#" title="" class="button">SEE ALL</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <article class="box">
+                                        <figure>
+                                            <a href="#" title=""><img
+                                                    src="home-run/app/themes/bus/assets/images/benefits/support.png" alt=""
+                                                    width="270" height="192" /></a>
+                                        </figure>
+                                        <div class="details">
+                                            <h4>4. GREAT CUSTOMER CARE</h4>
+                                            <p>Get excellent customer service available 8:00 AM to 10:00 PM, via phone,
+                                                chat or email.</p>
+                                            <a href="#" title="" class="button">SEE ALL</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Javascript -->
+        <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/jquery-1.11.3.min.js"></script>
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/jquery.noconflict.js"></script>
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/modernizr.2.7.1.min.js"></script>
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/jquery.placeholder.min.js"></script>
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/jquery-ui.1.10.4.min.js"></script>
+
+        <!-- Twitter Bootstrap -->
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/bootstrap.min.js"></script>
+
+
+
+        <!-- load page Javascript -->
+        <script type="bc5cf98d2a30559400c9f949-text/javascript"
+            src="home-run/app/themes/bus/assets/js/theme-scripts.min.js"></script>
+        <script type="bc5cf98d2a30559400c9f949-text/javascript" src="home-run/app/themes/bus/assets/js/scripts.js"></script>
+
+
+        <script src="cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"
+            type="bc5cf98d2a30559400c9f949-text/javascript"></script>
+
+        <script src="home-run/app/themes/bus/assets/js/jquery.datetimepicker.min.js"
+            type="bc5cf98d2a30559400c9f949-text/javascript"></script>
+
+        
+       </script>
+
+
+        <script src="ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+            data-cf-settings="bc5cf98d2a30559400c9f949-|49" defer=""></script>
+</body>
+
+</html>
